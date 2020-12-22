@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Faiz's Website</title>
+	<meta name="description" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Normalize/Reset CSS-->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="css/main.css">
+	
+	<style>
+	
+		h2{
+			color: black;
+		}
+		
+		body {
+			background-image: url('bg.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			color: black;
+		}
+	</style>
+
+</head>
+
+<body id="welcome">
+
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<h1>About Me</h1>
+			</a>
+		</div>
+		<br><nav class="left-nav">
+			<ul id="nav">
+				<li><a href="../Faiz_Bin_Zainal_2018278336/Home.html">Home</a></li>
+				<li><a href="../Faiz_Bin_Zainal_2018278336/Introduction.html">Introduction</a></li>
+				<li><a href="../Faiz_Bin_Zainal_2018278336/Academic.html">Academic Qualification</a></li>
+				<li><a href="../Faiz_Bin_Zainal_2018278336/Video.html">Memories Video</a></li>
+				<li><a href="../Faiz_Bin_Zainal_2018278336/Inquiry.html">Inquiry</a></li>
+			</ul>
+		</nav></br>
+	</aside>
+
+	<div id="main-wrapper">
+		<div class="main-content">	
+			<section id="Academic">
+				<div class="Academic">
+					<div class="content-header">
+						<h2>My Academic Qualification</h2>
+					</div><br>
+					<br><br><input type = "radio" id = "Primary" name = academic onclick = "academic()">			Primary
+					<input type = "radio" id = "Secondary" name = academic onclick = "academic()">					Secondary
+					<input type = "radio" id = "University" name = academic onclick = "academic()">					University
+	
+				<p id = r></p>
+
+				<script>
+					function academic() { 
+				
+						if ( document.getElementById ('Primary').checked ) { 
+							document.getElementById ('r').innerHTML = 
+								"<br>School Name : Sekolah Rendah Kebangsaan Sri Aman <br>Achievement : Graduate from Sk Sri Aman with 3A's and 2B's in UPSR";
+						}
+						else if ( document.getElementById ('Secondary').checked ) {
+							document.getElementById ('r').innerHTML =
+								"<br>School Name : Sekolah Menengah Kebangsaan Abdullah Munshi <br>Achievement : Graduate from SMK Abdullah Munshi with 6A's in SPM";
+						}
+						else 
+							document.getElementById ('r').innerHTML = 
+								"<br>School Name : University Teknologi MARA (UiTM) Kedah <br>Achievement : Got the Dean's Award for three semesters";
+					}			
+				</script>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
